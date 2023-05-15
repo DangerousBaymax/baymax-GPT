@@ -1,0 +1,55 @@
+/* 2021/12/20 | WYJ | 舟山 | 全局公共样式 */
+
+/* 初始化 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB",
+        "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+    word-wrap: break-word;
+    font-style: normal;
+    border: 0px solid transparent;
+    background: none;
+    list-style: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+*:focus {
+    outline: none;
+}
+
+body {
+    background: rgba(247, 247, 247, 1);
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+img {
+    border: 0;
+    user-select: none;
+}
+
+td,
+th,
+ul,
+ol {
+    padding: 0;
+}
+
+button {
+    cursor: pointer;
+    user-select: none;
+}

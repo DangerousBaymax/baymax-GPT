@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta
+            name="viewport"
+            content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"
+        />
+        <title>华塑智联</title>
+    </head>
+
+    <style scoped lang="scss">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .is_error {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .error_box {
+            display: flex;
+            align-items: center;
+        }
+        .undraw_bug {
+            width: 401px;
+            height: 308px;
+            margin-right: 78px;
+        }
+        .tips_h2 {
+            margin: 0;
+            font-size: 36px;
+            font-family: PingFangSC-Medium, PingFang SC;
+            font-weight: 600;
+            color: rgba(89, 89, 89, 1);
+            line-height: 50px;
+            margin-bottom: 12px;
+        }
+        .tips_p {
+            font-size: 18px;
+            font-family: PingFangSC-Medium, PingFang SC;
+            font-weight: 600;
+            color: rgba(0, 0, 0, 0.65);
+            line-height: 25px;
+            margin: 0;
+            margin-bottom: 4px;
+        }
+        .instructions_box {
+            display: flex;
+            margin-top: 62px;
+        }
+        .instructions {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-right: 62px;
+        }
+        .instructions_icon {
+            width: 76px;
+            height: 76px;
+            margin-bottom: 32px;
+        }
+        .instructions_tit {
+            font-size: 21px;
+            font-family: PingFangSC-Medium, PingFang SC;
+            font-weight: 600;
+            color: rgba(89, 89, 89, 1);
+            line-height: 29px;
+            margin-bottom: 2px;
+        }
+        .instructions_cot {
+            font-size: 16px;
+            font-family: PingFangSC-Medium, PingFang SC;
+            font-weight: 600;
+            color: rgba(89, 89, 89, 1);
+            line-height: 24px;
+        }
+        a {
+            text-decoration: none;
+        }
+    </style>
+
+    <body>
+        <div class="is_error">
+            <div class="error_box">
+                <img
+                    class="undraw_bug"
+                    src="../images/default/undraw_bug_fixing_oc-7-a_export.png"
+                />
+                <div class="tips_box">
+                    <p class="tips_h2">提醒您</p>
+                    <p class="tips_p">您使用的浏览器过旧，请升级您的浏览器</p>
+                    <p class="tips_p">
+                        我们建议您下载以下浏览器的最新版获得更好的体验
+                    </p>
+                    <div class="instructions_box">
+                        <a
+                            class="instructions"
+                            href="https://www.google.cn/chrome/thank-you.html?standalone=1&statcb=0&installdataindex=empty"
+                        >
+                            <img
+                                class="instructions_icon"
+                                src="../images/default/Google.png"
+                            />
+                            <p class="instructions_tit">谷歌浏览器</p>
+                            <p class="instructions_cot">Google Chrome</p>
+                        </a>
+                        <a
+                            class="instructions"
+                            href="https://download.mozilla.org/?product=firefox-latest-ssl&os=win&lang=zh-CN"
+                        >
+                            <img
+                                class="instructions_icon"
+                                src="../images/default/火狐.png"
+                            />
+                            <p class="instructions_tit">火狐浏览器</p>
+                            <p class="instructions_cot">Mozilla FireFox</p>
+                        </a>
+                        <a
+                            class="instructions"
+                            href="https://www.microsoft.com/zh-cn/windows/microsoft-edge"
+                        >
+                            <img
+                                class="instructions_icon"
+                                src="../images/default/ie.png"
+                            />
+                            <p class="instructions_tit">微软浏览器</p>
+                            <p class="instructions_cot">Microsoft Edge</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <script>
+        document.getElementById("tap").onclick = function () {
+            window.location.href =
+                "https://support.dmeng.net/upgrade-your-browser.html?referrer=" +
+                encodeURIComponent(window.location.href);
+        };
+    </script>
+</html>
